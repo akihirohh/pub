@@ -8,7 +8,8 @@ int main(int argc, char* argv[])
   ros::NodeHandle n;  
   ros::Publisher pub = n.advertise<geometry_msgs::Twist>("turtle1/cmd_vel", 1000);
   ros::Rate loop_rate(0.5);
-  geometry_msgs::Twist cmd;  
+  geometry_msgs::Twist cmd; 
+   
   ROS_INFO_STREAM("Open turtlesim: rosrun turtlesim turtlesim_node");
   
   double angular[] = {0, M_PI/2 };
